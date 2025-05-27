@@ -35,31 +35,3 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USER }}/${{ github.event.repository.name }}:latest
-
-  unit_test:
-    needs: docker_build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Unit Test
-        run: |
-          echo "Needs implement unit tests"
-
-  regression_test:
-    needs: docker_build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Unit Test
-        run: |
-          echo "Needs implement regression tests"
-  deploy:
-    needs:
-      - unit_test
-      - regression_test
-    runs-on: davo-runner
-    steps:
-      - name: Deploy to Production (Main)
-        if: github.ref_name == 'main'
-        run: |
-          docker pull ailabcau/tender-api:latest
-          docker service update --force --with-registry-auth --detach=false --image ailabcau/tender-api:latest tender_api
-          docker container prune -f
