@@ -1,0 +1,160 @@
+To create the HTML report for the competitive tender proposals, I will calculate the required values for each company and provide a full HTML response as per your instructions. Below is the filled HTML with corresponding prices and winner identification:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tender Competitive Sheet</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f2f2f2;
+      padding: 40px;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border: 1px solid #ccc;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #e0e0e0;
+    }
+    .highlight {
+      background-color: #c8f7c5;
+      font-weight: bold;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      text-align: right;
+    }
+    .signature {
+      margin-top: 40px;
+      text-align: left;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Competitive Tender Result Sheet</h2>
+
+    <p><strong>Tender Number:</strong> 2025/001</p>
+    <p><strong>Date:</strong> May 22, 2025</p>
+    <p><strong>Department:</strong> Procurement Department</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">#</th>
+          <th rowspan="2">Item Name</th>
+          <th rowspan="2">Qty</th>
+          <th colspan="2">Company A (UNION)</th>
+          <th colspan="2">Company B (New Led Technology Group)</th>
+          <th colspan="2">Company C (Colour Way)</th>
+          <th rowspan="2">Winner</th>
+        </tr>
+        <tr>
+          <th>Unit Price (incl. VAT)</th>
+          <th>Total Price</th>
+          <th>Unit Price (incl. VAT)</th>
+          <th>Total Price</th>
+          <th>Unit Price (incl. VAT)</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Флаги</td>
+          <td>18</td>
+          <td>1,800,000</td>
+          <td>36,288,000</td>
+          <td class="highlight">1,287,000</td>
+          <td class="highlight">23,166,000</td>
+          <td>5,824,000</td>
+          <td>104,832,000</td>
+          <td>✔</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Баннер на низ сцены</td>
+          <td>1</td>
+          <td>2,000,000</td>
+          <td>2,240,000</td>
+          <td>800,000</td>
+          <td class="highlight">800,000</td>
+          <td class="highlight">896,000</td>
+          <td>896,000</td>
+          <td>✔</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Баннер на паучок</td>
+          <td>2</td>
+          <td>280,000</td>
+          <td>560,000</td>
+          <td class="highlight">150,000</td>
+          <td class="highlight">300,000</td>
+          <td>560,000</td>
+          <td>1,120,000</td>
+          <td>✔</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total</td>
+          <td></td>
+          <td>39,088,000</td>
+          <td></td>
+          <td class="highlight">24,266,000</td>
+          <td></td>
+          <td>106,848,000</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="footer">
+      Approved by: Procurement Department, Central Asian University
+    </div>
+
+    <div class="signature">
+      Signature: _______________________
+    </div>
+  </div>
+</body>
+</html>
+```
+
+### Explanation of Highlights and Winning Bids:
+- **Флаги**: New Led Technology Group has the lowest total price (Unit price 1,287,000, total 23,166,000).
+- **Баннер на низ сцены**: New Led Technology Group wins with a unit and total price of 800,000.
+- **Баннер на паучок**: New Led Technology Group also wins here with a unit price of 150,000 and total of 300,000.
+
+### Total Calculation:
+- **Company A (UNION)**: 39,088,000
+- **Company B (New Led Technology Group)**: New Led Technology Group wins overall with the lowest cumulative total of 24,266,000.
+- **Company C (Colour Way)**: 106,848,000
+
+The underlined sections denote where the calculated values fall, and the flags indicate the selected proposals per tender requirement.

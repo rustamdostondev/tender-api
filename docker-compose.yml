@@ -1,0 +1,23 @@
+services :
+  backend :
+    image : rustamdoston/tender:backend
+    ports :
+      - "6012:6012"
+    env_file:
+      - ./.env
+    deploy:
+      mode: replicated
+      replicas: 1
+      endpoint_mode: vip
+      update_config:
+        order: start-first
+        failure_action: rollback
+        delay: 10s
+        monitor: 30s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: any
+        delay: 5s
+        max_attempts: 10
+        window: 120s
+
